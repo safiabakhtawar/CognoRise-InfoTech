@@ -1,0 +1,143 @@
+body {
+    background-color: #5b64bc;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.todo-header-container {
+    display: flex;
+    align-items: center;
+    background-color: #181a34;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    justify-content: space-between;
+    border: 1px solid #282a56;
+}
+
+.todo-header {
+    flex-grow: 1;
+    padding-right: 20px;
+}
+
+.todo-header h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.todo-header p {
+    margin: 5px 0 10px;
+    font-size: 0.9em;
+    color: #c0c0c0;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #282a56;
+    border-radius: 5px;
+    height: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 66%; /* Adjust width based on completed tasks */
+    height: 100%;
+    background-color: #00d7a1;
+}
+
+.task-counter {
+    background-color: #282a56;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-count {
+    font-size: 1.2em;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 350px;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2b2f57;
+    color: #fff;
+}
+
+#add-task-btn {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+#add-task-btn:hover {
+    background-color: #45a049;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 350px;
+}
+
+.task-item {
+    background-color: #2b2f57;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.task-item button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.task-item button:hover {
+    color: #FF6347;
+}
+
+.edit-btn {
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
